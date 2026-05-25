@@ -104,15 +104,15 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
 /* On dark hero, nav links are white */
 
 .nav-logo-img {
-  height: 88px;
+  height: 64px;
   width: auto;
-  max-width: 200px;
+  max-width: 160px;
   object-fit: contain;
   transition: height 0.3s ease;
 }
 
 .nav.scrolled .nav-logo-img {
-  height: 80px;
+  height: 56px;
 }
 
 .nav-logo {
@@ -322,7 +322,7 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 9rem 3rem 6rem;
+  padding: 8rem 3rem 5rem;
   gap: 4rem;
   max-width: 100%;
 }
@@ -363,7 +363,7 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
   background-image: url('https://images.unsplash.com/photo-1610375461246-83df859d849d?w=1800&q=80') !important;
   background-size: cover !important;
   background-position: center !important;
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
   opacity: 1 !important;
   z-index: 0 !important;
   transform: scale(1.05);
@@ -1888,8 +1888,8 @@ background: #FAD79C;
   .nav-links { display: none; }
   .hamburger { display: flex; }
 
-  .hero { flex-direction: column; padding: 7.5rem 1.5rem 4rem; gap: 3rem; }
-  .hero-visual { flex: none; width: 100%; max-width: 400px; margin: 0 auto; }
+  .hero { flex-direction: column; padding: 7rem 1.5rem 4rem; gap: 3rem; min-height: auto; }
+  .hero-visual { flex: none; width: 100%; max-width: 420px; margin: 0 auto; }
 
   .wwd-grid { grid-template-columns: 1fr; }
   .why-container { grid-template-columns: 1fr; gap: 3rem; }
@@ -1906,18 +1906,75 @@ background: #FAD79C;
   .container { padding: 0 1.5rem; }
   .section-pad { padding: 4rem 0; }
   .eco-grid { grid-template-columns: 1fr 1fr; }
+  .numbers-grid { grid-template-columns: repeat(2, 1fr); }
+  .number-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1.25rem; }
+  .number-item:last-child { border-bottom: none; }
 }
 
 @media (max-width: 600px) {
+  .nav { padding: 0.6rem 1rem; }
+  .nav-logo-img { height: 48px; }
+
+  .hero { padding: 6rem 1rem 3rem; gap: 2.5rem; }
+  .hero-title { font-size: clamp(2rem, 8vw, 3rem); }
+  .hero-sub { font-size: 0.95rem; }
+  .hero-content { max-width: 100%; }
+  .hero-visual { max-width: 100%; }
+  .hero-badge { font-size: 0.65rem; padding: 0.4rem 0.85rem; }
+
   .hero-stats { flex-wrap: wrap; gap: 1rem; }
   .stat-divider { display: none; }
+  .hero-ctas { flex-direction: column; }
+  .hero-trust { gap: 0.6rem; }
+
+  .gold-card { padding: 1.5rem; }
+  .gc-mini-stats { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+
   .eco-grid { grid-template-columns: 1fr; }
   .approach-grid { grid-template-columns: 1fr; }
   .strength-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
-  .hero-ctas { flex-direction: column; }
   .cta-actions { flex-direction: column; align-items: center; }
-  .hero-title { font-size: 2.6rem; }
   .numbers-grid { grid-template-columns: repeat(2, 1fr); }
   .number-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+  .wwd-grid { grid-template-columns: 1fr; }
+  .wwd-statement p { font-size: 1.1rem; }
+
+  .section-title { margin-bottom: 2rem; }
+  .section-pad { padding: 3rem 0; }
+  .container { padding: 0 1rem; }
+
+  .team-card { padding: 1.75rem; }
+  .tc-name { font-size: 1.6rem; }
+
+  .service-block { padding: 2rem 0; }
+
+  .testi-grid { grid-template-columns: 1fr; }
+  .testi-card { padding: 1.5rem; }
+
+  .cta-banner .container { padding: 0 1rem; }
+  .cta-banner h2 { font-size: clamp(1.6rem, 6vw, 2.5rem); }
+
+  .footer-grid { gap: 2rem; }
+  .footer-brand p { font-size: 0.82rem; }
+
+  .btn-gold, .btn-outline, .btn-outline-light { 
+    padding: 0.8rem 1.5rem; 
+    font-size: 0.82rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-ctas .btn-gold, .hero-ctas .btn-outline { width: auto; }
+
+  .scroll-hint { display: none; }
+  .coin { font-size: 1.1rem; }
+}
+
+@media (max-width: 380px) {
+  .nav-logo-img { height: 40px; }
+  .hero { padding: 5.5rem 0.75rem 2.5rem; }
+  .container { padding: 0 0.75rem; }
+  .gold-card { padding: 1.25rem; }
+  .gc-mini-stats { grid-template-columns: 1fr; }
 }
