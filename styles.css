@@ -1979,7 +1979,7 @@ background: #FAD79C;
 @media (max-width: 600px) {
   /* NAV — compact so hero content isn't buried under a huge logo */
   .nav { padding: 0.4rem 1rem; }
-  .nav-logo-img { height: 64px; }
+  .nav-logo-img { height: 72px; }
 .nav.scrolled .nav-logo-img { height: 56px; }
 
 
@@ -2044,7 +2044,7 @@ background: #FAD79C;
   .strength-item { padding: 1.5rem; }
 
   .footer-grid { grid-template-columns: 1fr; }
-  .footer .nav-logo-img { height: 44px; }
+  .footer .nav-logo-img { height: 64px; }
   .footer { padding: 3rem 0 2rem; }
 
   .container { padding: 0 1rem; }
@@ -2066,7 +2066,7 @@ background: #FAD79C;
   .gold-card { padding: 1rem; }
   .gc-mini-stats { grid-template-columns: 1fr; }
   .tc-name { font-size: 1.25rem; }
-  .footer .nav-logo-img { height: 36px; }
+  .footer .nav-logo-img { height: 58px; }
   .numbers-grid { grid-template-columns: 1fr; }
   .number-item { border-right: none !important; }
   .wwd-card { padding: 1.5rem; }
