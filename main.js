@@ -23,13 +23,21 @@ if (hamburger) {
 function openMobileMenu() {
   mobileMenu = document.createElement('div');
   mobileMenu.className = 'mobile-menu open';
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const links = [
+    { href: 'index.html', label: 'Home' },
+    { href: 'about.html', label: 'About' },
+    { href: 'services.html', label: 'Services' },
+    { href: 'team.html', label: 'Team' },
+  ];
+  const linksHTML = links.map(l => {
+    const active = l.href === currentPage ? ' style="color:var(--gold-pale)"' : '';
+    return `<a href="${l.href}"${active}>${l.label}</a>`;
+  }).join('');
   mobileMenu.innerHTML = `
-    <button class="mobile-close" id="mobileClose">✕</button>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="team.html">Team</a>
-    <a href="index.html#contact" style="color:var(--gold-light)">Partner With Us</a>
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu">✕</button>
+    ${linksHTML}
+    <a href="index.html#contact" class="mobile-cta">Partner With Us</a>
   `;
   document.body.appendChild(mobileMenu);
   document.body.style.overflow = 'hidden';
@@ -38,6 +46,12 @@ function openMobileMenu() {
   mobileMenu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') closeMobileMenu();
   });
+  // Close on Escape key
+  document.addEventListener('keydown', handleEscKey);
+}
+
+function handleEscKey(e) {
+  if (e.key === 'Escape') closeMobileMenu();
 }
 
 function closeMobileMenu() {
@@ -45,6 +59,7 @@ function closeMobileMenu() {
     mobileMenu.remove();
     mobileMenu = null;
     document.body.style.overflow = '';
+    document.removeEventListener('keydown', handleEscKey);
   }
 }
 
