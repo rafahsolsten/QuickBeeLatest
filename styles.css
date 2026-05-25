@@ -113,7 +113,7 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
 /* On dark hero, nav links are white */
 
 .nav-logo-img {
-  height: 64px;
+  height: 88px;
   width: auto;
   max-width: 160px;
   object-fit: contain;
@@ -121,7 +121,7 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
 }
 
 .nav.scrolled .nav-logo-img {
-  height: 56px;
+  height: 68px;
 }
 
 .nav-logo {
@@ -1538,7 +1538,7 @@ background: #FAD79C;
 .footer-contact a:hover { color: var(--maroon-deep); }
 
 .footer .nav-logo-img {
-  height: 64px;
+  height: 88px;
 }
 
 .footer .nav-logo {
