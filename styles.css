@@ -993,7 +993,7 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
 }
 
 .wwd-card {
-  background: #fff;
+  background: #FFF8EE;
   border: 1.5px solid rgba(139,26,60,0.08);
   border-radius: var(--radius-lg);
   padding: 2.2rem;
@@ -1226,7 +1226,7 @@ box-shadow: 0 2px 20px rgba(139,26,60,0.1);
 .step {
   flex: 1;
   padding: 2rem;
-  background: #fff;
+  background: #FFF8EE;
   border: 1.5px solid rgba(139,26,60,0.08);
   border-radius: var(--radius-lg);
   transition: all var(--transition);
@@ -1598,7 +1598,7 @@ background: #FAD79C;
 .about-text p strong { color: var(--maroon); }
 
 .highlight-card {
-  background: #fff;
+  background: #FFF8EE;
   border: 1.5px solid rgba(139,26,60,0.1);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
@@ -1636,7 +1636,7 @@ background: #FAD79C;
 }
 .vm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
 .vm-card {
-  background: #fff;
+  background: #FFF8EE;
   border: 1.5px solid rgba(139,26,60,0.08);
   border-radius: var(--radius-lg);
   padding: 3rem;
@@ -1734,7 +1734,7 @@ background: #FAD79C;
   align-items: start;
 }
 .service-block:last-child { border-bottom: none; }
-.service-block.alt { background: #fff; border-radius: var(--radius-lg); padding: 3rem; margin: 0 -1rem; }
+.service-block.alt { background: #FFF8EE;; border-radius: var(--radius-lg); padding: 3rem; margin: 0 -1rem; }
 
 .sb-header { display: flex; flex-direction: column; gap: 1.25rem; }
 .sb-icon-wrap {
@@ -1773,7 +1773,7 @@ background: #FAD79C;
 .team-card {
   display: grid; grid-template-columns: auto 1fr;
   gap: 3rem; padding: 3.5rem;
-  background: #fff;
+  background: #FFF8EE;
   border: 1.5px solid rgba(139,26,60,0.08);
   border-radius: var(--radius-lg);
   margin-bottom: 2rem;
@@ -1849,7 +1849,7 @@ background: #FAD79C;
 .strength-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
 .strength-item {
   padding: 2rem; border: 1.5px solid rgba(139,26,60,0.08);
-  border-radius: var(--radius-lg); background: #fff;
+  border-radius: var(--radius-lg); background: #FFF8EE;
   transition: all var(--transition); transition-delay: var(--delay, 0s);
   box-shadow: 0 2px 12px rgba(139,26,60,0.03);
 }
