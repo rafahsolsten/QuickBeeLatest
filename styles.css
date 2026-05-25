@@ -1929,8 +1929,8 @@ background: #FAD79C;
 /* --- 900px: tablet portrait / large phone --- */
 @media (max-width: 900px) {
   .nav { padding: 0.5rem 1.25rem; }
-  .nav-logo-img { height: 52px; }
-  .nav.scrolled .nav-logo-img { height: 48px; }
+.nav-logo-img { height: 72px; }
+.nav.scrolled .nav-logo-img { height: 64px; }
   .nav-links { display: none !important; }
   .hamburger { display: flex !important; }
   .hero { flex-direction: column; padding: 6rem 1.5rem 3.5rem; gap: 2.5rem; overflow: hidden; }
@@ -1979,8 +1979,9 @@ background: #FAD79C;
 @media (max-width: 600px) {
   /* NAV — compact so hero content isn't buried under a huge logo */
   .nav { padding: 0.4rem 1rem; }
-  .nav-logo-img { height: 44px; }
-  .nav.scrolled .nav-logo-img { height: 40px; }
+  .nav-logo-img { height: 64px; }
+.nav.scrolled .nav-logo-img { height: 56px; }
+
 
   /* HERO — tight top padding matching ~60px nav height */
   .hero { padding: 5.5rem 1rem 3rem; gap: 2rem; }
@@ -2054,8 +2055,8 @@ background: #FAD79C;
 /* --- 380px: very small phones (Galaxy A, iPhone SE) --- */
 @media (max-width: 380px) {
   .nav { padding: 0.35rem 0.75rem; }
-  .nav-logo-img { height: 36px; }
-  .nav.scrolled .nav-logo-img { height: 34px; }
+  .nav-logo-img { height: 58px; }
+.nav.scrolled .nav-logo-img { height: 50px; }
   .hero { padding: 4.75rem 0.75rem 2.5rem; gap: 1.75rem; }
   .hero-title { font-size: 1.75rem; }
   .hero-badge { font-size: 0.6rem; letter-spacing: 0.1em; }
